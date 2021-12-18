@@ -195,10 +195,22 @@ thead{
     font-weight: bold;
     font-size: 2em;
     margin: 0.5em 0;
+    /*text-shadow: 2px 2px rgb(42, 144, 175);*/
 }
 
 .imagembeneficios{
     width: 60%;
+    opacity: 30%;
+    box-shadow: 10px 10px 5px 5px #111; /*-10px -10px 15px yellow*/
+}
+
+.imagembeneficios:hover{
+    opacity: 100%;
+
+}
+
+.beneficios{
+
 }
 
 .conteudo-beneficios{
@@ -248,3 +260,7 @@ thead{
     margin: 2em auto;
 
 }
+
+/*@media screen and (max-width: 480px) {
+
+}*/
