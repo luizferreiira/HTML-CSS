@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align content</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            height: 400;
+            max-width: 300px;
+            margin: 0 auto;
+            border: solid 2px #000;
+            
+        }
+
+        .item{
+            background-color: blueviolet;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+
+    <p>Stretch</p>
+    <div class="container">
+        <div class="item">item 1</div>
+        <div class="item">t conseliaccusamus libero vero soluta amet vitae, harum ratione alias eos doloribus cumque placeat ducimus quas. Tenetur, animi officiis.</div>
+        <div class="item">outro item</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6 tambem </div>
+        <div class="item">item 7 não pode faltar</div>
+    </div>
+
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">item 1</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatum! Dolorem voluptates, accusamus libero vero soluta amet vitae, harum ratione alias eos doloribus cumque placeat ducimus quas. Tenetur, animi officiis.</div>
+        <div class="item">outro item</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6 tambem </div>
+        <div class="item">item 7 não pode faltar</div>
+    </div>
+
+    <p>Flex-start</p>
+    <div class="container flex-start">
+        <div class="item">item 1</div>
+        <div class="item">Loretit. Veusamus libero vero soluta amet vitae, harum ratione alias eos doloribus cumque placeat ducimus quas. Tenetur, animi officiis.</div>
+        <div class="item">outro item</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6 tambem </div>
+        <div class="item">item 7 não pode faltar</div>
+    </div>
+
+    <p>Flex-end</p>
+    <div class="container flex-end">
+        <div class="item">item 1</div>
+        <div class="item">Loretit. Veusamus libero vero soluta amet vitae, harum ratione alias eos doloribus cumque placeat ducimus quas. Tenetur, animi officiis.</div>
+        <div class="item">outro item</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6 tambem </div>
+        <div class="item">item 7 não pode faltar</div>
+    </div>
+
+
+    <!--Outros importantes são: space-around e space-between-->
+    
+</body>
+</html>

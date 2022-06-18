@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex shrink</title>
+
+    <style>
+        .flex-container{
+            display: flex;
+            border: solid 1px #000;
+            max-width: 350px;
+            margin-bottom: 10px;
+        }
+        
+        .item{
+            margin: 5px;
+            background-color: coral;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .s-1{
+            flex-shrink: 1;
+        }
+
+        .s-2{
+            flex-shrink: 2;
+            flex-basis: 100px;
+        }
+
+        .s-3{
+            flex-shrink: 3;
+            flex-basis: 100px;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+
+        .fg-0{
+            flex-shrink: 0;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Flex-Shrink</p>
+    <div class="flex-container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">B</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+        <div class="item s-1 fg-1">E</div>
+    </div>
+
+    <p>Flex-Shrink 1</p>
+    <div class="flex-container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">B</div>
+        <div class="item s-1 fg-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quia eum accusantium nemo, suscipit vero laboriosam consequatur sunt voluptatem dolorum, nostrum adipisci autem ea architecto exercitationem in sit reiciendis magni!</div>
+        <div class="item s-1 fg-1">D</div>
+        <div class="item s-1 fg-1">E</div>
+    </div>
+
+
+    <p>Flex-Shrink 0 / Basis: 100px</p>
+    <div class="flex-container">
+        <div class="item s-1 fg-0">A</div>
+        <div class="item s-1 fg-0">B</div>
+        <div class="item s-1 fg-0">Loreng elit. magni!</div>
+        <div class="item s-1 fg-0">D</div>
+        <div class="item s-1 fg-0">E</div>
+    </div>
+
+
+    <p>Flex-Shrink mix / Basis: 100px</p>
+    <div class="flex-container">
+        <div class="item s-1 fg-0">A</div>
+        <div class="item s-2 fg-0">B</div>
+        <div class="item s-2 fg-0">Loreng elit. magni!</div>
+        <div class="item s-3 fg-0">D</div>
+    </div>
+
+
+    
+</body>
+</html>
