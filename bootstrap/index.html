@@ -48,7 +48,7 @@
     <div class="row">
       <div class=" col-md-8 mt-5">
         <h2 class="mb-3"><strong>Via package <br> manager</strong></h2>
-        <p class="mb-3">Install Bootstrap’s source Sass and JavaScript files via npm,
+        <p class="mb-3 h6 text-muted">Install Bootstrap’s source Sass and JavaScript files via npm,
           RubyGems, Composer, or Meteor. Package managed installs don’t include documentation or our full build scripts.
           You can also use our npm template repo to quickly generate a Bootstrap project via npm.
         </p>
@@ -56,7 +56,58 @@
         <button type="button" class="btn btn-outline-secondary btn-lg p-3">Download</button>
       </div>
       <div class=" col-md-4 mt-5">
-        <img class="img-fluid" src="https://picsum.photos/500/250">
+        <img class="img-fluid rounded" src="https://picsum.photos/500/250">
+      </div>
+      <div class=" col-md-12 mt-5">
+        <div class="row">
+          <div class="col-5">
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome Completo</label>
+              <input type="text" class="form-control border border-secondary" id="nome" placeholder="Digite o seu nome">
+            </div>
+          </div>
+          <div class="col">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Seu e-mail</label>
+              <input type="email" class="form-control border border-secondary" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+          </div>
+          <div class="col">
+            <div class="mb-3">
+              <label for="telefone" class="form-label">Telefone</label>
+              <input type="text" class="form-control border border-secondary" id="telefone" placeholder="Seu telefone">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-5">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Buscar usuário" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+          </div>
+        </div>
+        
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Deixe sua mensagem</label>
+          <textarea class="form-control border border-secondary" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleDataList" class="form-label">Datalist example</label>
+            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+            <datalist id="datalistOptions">
+              <option value="San Francisco">
+              <option value="New York">
+              <option value="Seattle">
+              <option value="Los Angeles">
+              <option value="Chicago">
+            </datalist>
+        </div>
+
+        <div class="mb-3">
+          <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+          <input class="form-control" type="file" id="formFileMultiple" multiple>
+        </div>
       </div>
     </div>
   </div>
