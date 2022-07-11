@@ -52,67 +52,72 @@
           RubyGems, Composer, or Meteor. Package managed installs don’t include documentation or our full build scripts.
           You can also use our npm template repo to quickly generate a Bootstrap project via npm.
         </p>
+
+      <div id="alert" class=" d-none alert alert-warning alert-dismissible fade show" style="background-color: #dabb35;" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
         <a href="#" class="btn btn-primary btn-lg p-3" style="background-color: #321d58; border: none">Get Started</a>
-        <button type="button" class="btn btn-outline-secondary btn-lg p-3">Download</button>
+        <button onclick="displayAlerta()" type="button" class="btn btn-outline-secondary btn-lg p-3">Download</button>
       </div>
       <div class=" col-md-4 mt-5">
         <img class="img-fluid rounded" src="https://picsum.photos/500/250">
       </div>
-      <div class=" col-md-12 mt-5">
-        <div class="row">
-          <div class="col-5">
-            <div class="mb-3">
-              <label for="nome" class="form-label">Nome Completo</label>
-              <input type="text" class="form-control border border-secondary" id="nome" placeholder="Digite o seu nome">
+
+      <div class="md-12 mt-5">
+        <h1 class="fs-3 text-center">Perguntas frequêntes</h1>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" style="background-color: #321d58; color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
             </div>
           </div>
-          <div class="col">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Seu e-mail</label>
-              <input type="email" class="form-control border border-secondary" id="exampleFormControlInput1" placeholder="name@example.com">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" style="background-color: #321d58; color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
             </div>
           </div>
-          <div class="col">
-            <div class="mb-3">
-              <label for="telefone" class="form-label">Telefone</label>
-              <input type="text" class="form-control border border-secondary" id="telefone" placeholder="Seu telefone">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" style="background-color: #321d58; color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-5">
-          <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Buscar usuário" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
-          </div>
-        </div>
-        
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Deixe sua mensagem</label>
-          <textarea class="form-control border border-secondary" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-
-        <div class="mb-3">
-          <label for="exampleDataList" class="form-label">Datalist example</label>
-            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
-            <datalist id="datalistOptions">
-              <option value="San Francisco">
-              <option value="New York">
-              <option value="Seattle">
-              <option value="Los Angeles">
-              <option value="Chicago">
-            </datalist>
-        </div>
-
-        <div class="mb-3">
-          <label for="formFileMultiple" class="form-label">Multiple files input example</label>
-          <input class="form-control" type="file" id="formFileMultiple" multiple>
         </div>
       </div>
-    </div>
+
   </div>
     
     <!-- JavaScript Bundle with Popper -->
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+      function displayAlerta(){
+
+        var alerta = document.getElementById('alert');
+        alerta.classList.toggle('d-none');
+
+      }
+    </script>
 </body>
 </html>
