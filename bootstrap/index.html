@@ -10,6 +10,9 @@
 </head>
 <body class="bg-light">
     
+
+  <!-- Barra de navegação -->
+
   <nav class="navbar navbar-expand-md navbar-dark mb-5" style="background-color: #321d58;" aria-label="Fourth navbar example">
     <div class="container">
       <a class="navbar-brand" href="#">Expand at md</a>
@@ -44,26 +47,132 @@
     </div>
   </nav>
 
+
+
+
   <div class="container">
     <div class="row">
+
+      <!-- Carousel -->
+
+      <div class="col-md-12">
+        <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="https://picsum.photos/1601/400" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="https://picsum.photos/1602/400" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://picsum.photos/1603/400" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+
+      <!-- Card principal -->
+
       <div class=" col-md-8 mt-5">
-        <h2 class="mb-3"><strong>Via package <br> manager</strong></h2>
-        <p class="mb-3 h6 text-muted">Install Bootstrap’s source Sass and JavaScript files via npm,
-          RubyGems, Composer, or Meteor. Package managed installs don’t include documentation or our full build scripts.
-          You can also use our npm template repo to quickly generate a Bootstrap project via npm.
-        </p>
 
-      <div id="alert" class=" d-none alert alert-warning alert-dismissible fade show" style="background-color: #dabb35;" role="alert">
-        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <div class="card">
+          <div class="card-body">
+            <h2 class="mb-3"><strong>Via package <br> manager</strong></h2>
+            <p class="mb-3 h6 text-muted">Install Bootstrap’s source Sass and JavaScript files via npm,
+              RubyGems, Composer, or Meteor. Package managed installs don’t include documentation or our full build scripts.
+              You can also use our npm template repo to quickly generate a Bootstrap project via npm.
+            </p>
+
+            <div id="alert" class=" d-none alert alert-warning alert-dismissible fade show" style="background-color: #dabb35;" role="alert">
+              <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+
+            <a href="#" class="btn btn-primary btn-lg p-3" style="background-color: #321d58; border: none">Get Started</a>
+            <button onclick="displayAlerta()" type="button" class="btn btn-outline-secondary btn-lg p-3">Download</button>
+          </div>
+
+        </div>
       </div>
 
-        <a href="#" class="btn btn-primary btn-lg p-3" style="background-color: #321d58; border: none">Get Started</a>
-        <button onclick="displayAlerta()" type="button" class="btn btn-outline-secondary btn-lg p-3">Download</button>
-      </div>
       <div class=" col-md-4 mt-5">
         <img class="img-fluid rounded" src="https://picsum.photos/500/250">
       </div>
+
+
+
+
+    <!-- outros cards -->
+
+      <div class="col-md-3 mt-5">
+        <div class="card">
+          <img src="https://picsum.photos/501/250" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mt-5">
+        <div class="card">
+          <img src="https://picsum.photos/502/250" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mt-5">
+        <div class="card">
+          <img src="https://picsum.photos/503/250" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mt-5">
+        <div class="card">
+          <img src="https://picsum.photos/504/250" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 mt-5 text-center">
+        <div class="card">
+          <div class="card-header">
+            Featured
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- accordion -->
 
       <div class="md-12 mt-5">
         <h1 class="fs-3 text-center">Perguntas frequêntes</h1>
