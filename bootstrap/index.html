@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
     <title>Aula - Bootstrap</title>
 </head>
 <body class="bg-light">
@@ -23,7 +26,7 @@
       <div class="collapse navbar-collapse" id="navbarsExample04">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-fill"></i> Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="offcanvas" href="#staticBackdrop">Menu</a>
@@ -101,7 +104,7 @@
             </div>
 
             <a href="#" class="btn btn-primary btn-lg p-3" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: #321d58; border: none">Get Started</a>
-            <button onclick="displayAlerta()" type="button" class="btn btn-outline-secondary btn-lg p-3">Download</button>
+            <button onclick="displayAlerta()" type="button" class="btn btn-outline-secondary btn-lg p-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Download example"><i class="mdi mdi-download-circle"></i> Download</button>
           </div>
 
         </div>
@@ -312,6 +315,9 @@
             toast.show()
           })
         }
+
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
 </body>
 </html>
